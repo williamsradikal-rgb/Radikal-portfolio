@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Radikal Portfolio - Personal portfolio website">
+
+    <title>Radikal Portfolio</title>
+
+    <!-- Favicon / Logo -->
+    <link rel="icon" type="image/png" href="./34.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="./34.png" alt="Radikal Logo">
+            <span>Radikal</span>
+        </div>
+
+        <div class="nav-container">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#courses">Courses</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="icons">
+            <span class="search-icon" title="Search">🔍</span>
+            <span class="menu" title="Menu">☰</span>
+        </div>
+
+    </nav>
+
+
+    <!-- ================= SEARCH ================= -->
+    <div class="search-box">
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search my portfolio..."
+            autocomplete="off"
+        >
+
+        <button id="searchButton" type="button">
+            Search
+        </button>
+    </div>
+
+
+    <!-- ================= HOME ================= -->
+    <section id="home" class="home">
+
+        <div class="home-text">
+            <h1>Hello, I'm <span>Radikal</span></h1>
+
+            <h2>Welcome to My Portfolio</h2>
+
+            <p>
+                My name is Alfred Naankori Radikal.
+                Welcome to my personal portfolio website.
+            </p>
+        </div>
+
+        <div class="main-img">
+            <img
+                src="./profile.jpg"
+                alt="My Profile Picture"
+            >
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-card">
+                <h3>Who I Am</h3>
+
+                <p>
+                    I am a passionate student and technology enthusiast
+                    interested in web development, programming and
+                    creative digital solutions.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>My Goals</h3>
+
+                <p>
+                    My goal is to improve my technical skills and build
+                    useful, professional and innovative digital products.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>My Interests</h3>
+
+                <p>
+                    I enjoy learning about technology, programming,
+                    web design and developing creative projects.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COURSES ================= -->
+    <section id="courses" class="courses">
+
+        <h2>My Courses</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Web Development</td>
+                        <td>HTML, CSS and JavaScript</td>
+                    </tr>
+
+                    <tr>
+                        <td>Programming</td>
+                        <td>Programming fundamentals and problem solving</td>
+                    </tr>
+
+                    <tr>
+                        <td>Database</td>
+                        <td>Database design and management</td>
+                    </tr>
+
+                    <tr>
+                        <td>Research Methodology</td>
+                        <td>Research methods and academic research</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery" class="gallery">
+
+        <h2>My Gallery</h2>
+
+        <div class="gallery-container">
+
+            <div class="gallery-card">
+                <img
+                    src="./Untitled-1 EXAMS.jpg"
+                    alt="Exams"
+                    class="gallery-image"
+                >
+
+                <h3>Exams</h3>
+            </div>
+
+
+            <div class="gallery-card">
+                <img
+                    src="./BD TEMPLATE 222.png"
+                    alt="Birthday Template"
+                    class="gallery-image"
+                >
+
+                <h3>Birthday Design</h3>
+            </div>
+
+
+            <div class="gallery-card">
+                <img
+                    src="./palm sunday 1.png"
+                    alt="Palm Sunday"
+                    class="gallery-image"
+                >
+
+                <h3>Palm Sunday</h3>
+            </div>
+
+
+            <div class="gallery-card">
+                <img
+                    src="./safe journey.png"
+                    alt="Safe Journey"
+                    class="gallery-image"
+                >
+
+                <h3>Safe Journey</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Me</h2>
+
+        <form
+            id="contactForm"
+            action="mailto:williamsradikak@gmail.com"
+            method="post"
+            enctype="text/plain"
+        >
+
+            <label for="fullname">Full Name</label>
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <label for="email">Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+            >
+
+
+            <label for="phone">Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="0241234567"
+                inputmode="tel"
+                required
+            >
+
+
+            <label for="message">Message</label>
+
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message..."
+                minlength="5"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= IMAGE MODAL ================= -->
+
+    <div class="image-modal" id="imageModal">
+
+        <button
+            class="close-modal"
+            id="closeModal"
+            type="button"
+            aria-label="Close image"
+        >
+            &times;
+        </button>
+
+        <img
+            id="modalImage"
+            src=""
+            alt="Expanded image"
+        >
+
+        <p id="modalCaption"></p>]
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Radikal Portfolio. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
